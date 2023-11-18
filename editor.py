@@ -59,7 +59,7 @@ video_editor.modify_speed(1.5)
 video_editor.modify_brightness(0.7)
 
 # Invertendo cores
-#video_editor.invert_color()
+video_editor.invert_color()
 
 # Salvando o vídeo modificado
 video_editor.save_video()
