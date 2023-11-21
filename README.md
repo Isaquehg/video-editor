@@ -110,7 +110,7 @@ The `clip` command allows you to trim a video by specifying the start and end ti
 The `brightness` command adjusts the brightness of the video using the `gamma_corr` effect in MoviePy.
 
 ### Contrast
-The `modify_contrast` command changes the contrast of the video using the `lum_contrast` effect in MoviePy.
+The `contrast` command changes the contrast of the video using the `lum_contrast` effect in MoviePy.
 
 ### Volume
 The `volume` command modifies the volume of the video by applying a volume factor.
