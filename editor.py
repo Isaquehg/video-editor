@@ -49,33 +49,3 @@ class Editor():
     def save_video(self, output_path='./results/modified_video.mp4'):
         self.video.write_videofile(output_path, fps=24)
 
-# Usage Example
-video_editor = Editor("./videos/windmill.mp4")
-#video_editor = Editor("./videos/bigbuckbunny.mp4") -> use this one to test the volume modifications
-
-# Clipping the video
-video_editor.clip_video(3, 5)
-
-# Modifying the Volume
-#video_editor.volume(1.5)
-
-# Modifying Contrast
-video_editor.contrast(1.5)
-
-# Modifying Video Speed
-video_editor.speed(1.5)
-
-# Modifying Brightness
-video_editor.brightness(0.7)
-
-# Inverting Colours
-video_editor.invert_color()
-
-# Efeito de pintura
-video_editor.paiting_effect(1.3)
-
-# Applying Chroma Key
-video_editor.chroma_key([4,179,68], "images/nature_grass.png")
-
-# Saving Video to /results
-video_editor.save_video()
