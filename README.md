@@ -1,9 +1,10 @@
 # video-editor
-Video Editor usign Python, with [MoviePy](https://zulko.github.io/moviepy/index.html) and []
+Video Editor usign Python, with [MoviePy](https://zulko.github.io/moviepy/index.html)
 
 ## Table of Contents
 - [About](#about)
 - [Setup](#setup)
+- [Project Structure](#project-structure)
 - [Functionalities](#functionalities)
   - [Clip Video](#clip-video)
   - [Brightness](#brightness)
@@ -12,10 +13,11 @@ Video Editor usign Python, with [MoviePy](https://zulko.github.io/moviepy/index.
   - [Speed](#speed)
   - [Invert Color](#invert-color)
   - [Paiting effect](#paiting-effect)
-- [Results](#results)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## About
-This project is developed for the Computer Graphics and Multimedia lectures (C209). It provides a simple video editor implemented in Python using the MoviePy library. The editor offers various functionalities to clip, modify brightness, contrast, volume, speed, invert colors, and apply a painting effect to videos.
+This project is developed for the Computer Graphics and Multimedia lecture (C209). It provides a simple video editor implemented in Python using the MoviePy library. The editor offers several functionalities to clip, modify brightness, contrast, volume, speed, invert colors, and apply a painting effect to manipulate the video.
 
 
 ## Setup
@@ -97,6 +99,25 @@ This project is developed for the Computer Graphics and Multimedia lectures (C20
         ----------------------------------------
 
 
+## Project Structure
+The project's folder structure is the following:
+
+        /video-editor
+        │   .gitignore
+        │   commands.py
+        │   editor.py
+        │   LICENSE
+        │   main.py
+        │   README.md
+        │   requirements.txt
+        │
+        │─── /images
+        │    └── [Images for Chroma Key]
+        │─── /results
+        │    └── [Final Video]
+        │─── /videos
+        │    └── [Video Files to be edited]
+
 
 ## Functionalities
 
@@ -128,5 +149,30 @@ The `painting` command transforms the video into a painting using the `painting`
 The `chromakey` command applies an image background to replace a given RGB value in the original video
 
 ### Save
-The 'save' command saves the video and stores it in the `/results` folder
+The `save` command saves the video and stores it in the `/results` folder
 
+## Contributors
+This project was developed by [Arthur Assis](https://github.com/Arthur521), [Isaque Hollanda](https://github.com/Isaquehg) and [Vitor Pestalozi]()
+
+## License
+MIT License
+
+Copyright (c) 2023 Isaque Hollanda Gonçalves
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
