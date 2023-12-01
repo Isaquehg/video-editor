@@ -63,10 +63,10 @@ class Entradas(Commands):
     def clip(self):
         start = input("Entre com o segundo que começa o corte: ")
         end = input("Entre com o segundo que termina o corte: ")
-        self.video_editor.video_editor.clip_video(start, end)
+        self.video_editor.clip_video(start, end)
 
     def chromakey(self):
-        video_back = input("Entre com o endereço do vídeo de fundo: ")
+        video_back = input("Entre com o endereço do fundo: ")
         self.video_editor.chroma_key([4,179,68], video_back)
     
     def volume(self):
@@ -85,14 +85,14 @@ class Entradas(Commands):
         bt = float(input("Entre com um valor decimal de 0 a 2.5: "))
         self.video_editor.brightness(bt)
 
-    def invertColor(self):
-        self.video_editor.invert_color()
-        print("Ta invertido")
-
     def painting(self):
         pt = float(input("Entre com um valor decimal de 0 a 2.5: "))
         self.video_editor.paiting_effect(pt)
     
+    def invertColor(self):
+        self.video_editor.invert_color()
+        print("Ta invertido")
+
     def save(self):
         self.video_editor.save_video()
         print("Ta salvo")
@@ -106,13 +106,13 @@ class Entradas(Commands):
         print("Digite os seguintes comandos para editar seu vídeo:")
         print("'select' - Para selecionar o vídeo e o seu caminho")
         print("'clip' - Para cortar partes do vídeo")
-        print("chromakey")
-        print("volume")
-        print("contrast")
-        print("speed")
-        print("brightness")
-        print("invertColor")
+        print("chromakey - Para substituir um fundo verde por outro vídeo")
+        print("volume - Para alterar o volume do áudio")
+        print("contrast - Para alterar o contraste do vídeo")
+        print("speed - Para alterar a velocidade do vídeo")
+        print("brightness - Para alterar o vrilho do vídeo")
+        print("invertColor - Para inverter cores dos vídeos")
         print("'painting' - Para efeito de pintura")
-        print("save")
+        print("save - Para salvar o vídeo")
         print("-" * 40)
         super().run()
